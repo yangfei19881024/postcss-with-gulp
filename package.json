@@ -7,7 +7,7 @@
     "PostCSS",
     "css"
   ],
-  "author": "damo",
+  "author": "andy",
   "license": "MIT",
   "dependencies": {
     "postcss": "^5.0.0",
