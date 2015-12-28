@@ -1,0 +1,41 @@
+/**
+  autoprefix
+**/
+.bar{
+  display: flex;
+  transition: all 1s linear;
+  color:red;
+  font-size:16px;
+}
+/**
+  nextcss
+**/
+.cssnext {
+  background: color(red alpha(-10%));
+}
+
+.precss{
+  @if 3 < 5{
+    background: red;
+  }@else{
+    background: blue;
+  }
+}
+/** mixin **/
+@define-mixin changeColor $color,$size{
+  color:$color;
+  font-size: $size;
+}
+
+.bar{
+  @mixin changeColor red 16px;
+}
+
+/** extend **/
+@define-extend bluecolor{
+  background: blue;
+}
+
+.input{
+  @extend bluecolor;
+}

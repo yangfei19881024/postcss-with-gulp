@@ -1,0 +1,32 @@
+/**
+  autoprefix
+**/
+.bar{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  transition: all 1s linear;
+  color:red;
+  font-size:16px;
+}
+/**
+  nextcss
+**/
+.cssnext {
+  background: rgba(255, 0, 0, 0.9);
+}
+
+.precss{
+  background: red
+}
+/** mixin **/
+
+.bar{
+  color: red;
+  font-size: 16px;
+}
+
+/** extend **/
+.input{
+  background: blue;
+}
